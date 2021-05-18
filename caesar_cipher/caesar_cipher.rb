@@ -11,12 +11,12 @@ def caesar_cipher(string, shift)
 end
 
 def shift_upcase(byte, shift)
-  byte += shift
+  byte += shift % 26
   byte > 'Z'.ord ? 'A'.ord + (byte - 'Z'.ord) - 1 : byte
 end
 
 def shift_downcase(byte, shift)
-  byte += shift
+  byte += shift % 26
   byte > 'z'.ord ? 'a'.ord + (byte - 'z'.ord) - 1 : byte
 end
 

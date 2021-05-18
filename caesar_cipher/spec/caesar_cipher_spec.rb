@@ -21,8 +21,8 @@ describe '#caesar_cipher' do
 
   it 'shifts back to the beginning if number is large' do
     word = 'aBCDefGh'
-    result = 'aBCDefGh'
-    expect(caesar_cipher(word, 26)).to eql(result)
+    result = 'zABCdeFg'
+    expect(caesar_cipher(word, 25)).to eql(result)
   end
 
   it 'shifts a word with extremely large numbers' do
