@@ -1,4 +1,4 @@
-def caeser_cipher(string, shift)
+def caesar_cipher(string, shift)
   string = string.bytes.map do |byte|
     if alphabetical?(byte)
       byte <= 'Z'.ord ? shift_upcase(byte, shift) : shift_downcase(byte, shift)
